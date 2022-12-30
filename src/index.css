@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Karla:wght@700&display=swap');
+
+
+body{
+    box-sizing: border-box;
+    margin:0;
+    padding:10px;
+    font-family: 'Karla',sans-serif;
+    width:100vw;
+    height:100%;
+    background: #F5F7FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width:50%;
+    min-height:100vh;
+}
+
+.welcome{
+    text-align: center;
+}
+
+.welcome h1{
+font-size: 35px;
+margin:0;
+}
+
+.welcome p{
+    margin-top:5px;
+    opacity: .9;
+}
+
+.welcome-btn,.submit-btn{
+    background: #4D5B9E;
+    border:0;
+    color:white;
+    height:40px;
+    width:140px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.welcome-btn:active,.submit-btn:active{
+    transform: scale(.98);
+}
+
+
+.submit{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.result{
+    font-size: 18px;
+}
+
+.question{
+    border-bottom:1px solid #DBDEF0;
+    ;
+    padding-bottom:30px;
+}
+
+.container h1{
+    text-transform: capitalize;
+    color:#293264;
+    margin-bottom:0;
+    margin-bottom:10px;
+}
+
+.answers{
+    display: flex;
+    flex-direction: row;
+}
+
+.answer{
+    background: transparent;
+    outline:1px solid #4D5B9E;
+    margin-right:30px;
+    padding:8px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:#4D5B9E;
+    margin-top:5px;
+    border:0;
+}
+
+#correct.answer{
+    background-color: #94D7A2;
+    outline:1px solid #94D7A2;
+}
+
+#incorrect.answer.selected{
+    background-color: #F8BCBC;
+    outline:0;
+}
+
+#not-selected.answer{
+    color:lightgray;
+    outline:1px solid lightgray;
+}
+
+.check-answers{
+    background:#4D5B9E;
+    outline:0;
+    color:white;
+    height:40px;
+    width:140px;
+    border-radius: 10px;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+.answer.selected{
+    background:#D6DBF5;
+    border:0;
+}
+
+.check-answers:active{
+    transform: scale(.98);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-family: 'Inter',sans-serif;
+}
+
+/* mobile Display */
+
+@media (max-width:1439px){
+body{
+    padding:20px;
+}
+
+.answers{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* grid-template-rows: repeat(2,1fr); */
+    gap:5px;
+}
+
+.submit{
+    margin-bottom: 10px;
+}
+}
