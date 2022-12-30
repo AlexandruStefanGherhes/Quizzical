@@ -1,4 +1,6 @@
 
+![preview img](/ss/active.png)
+
 # Quizzical
 ## [Live Demo](https://quizzicalhut.netlify.app/)
 ## [Video Demo](https://youtu.be/QDdUG6gNyJg)
